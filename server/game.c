@@ -90,7 +90,7 @@ void play_game(int sockfd, int multicastfd, char* nickname) {
     struct timeval start, end;
     long seconds, useconds;
     double mtime;
-    const char *directory = "/home/koan/myHome/Programming/VSCode/Projects/Programowanie_sieciowe_projekt/server/users";
+    const char *directory = "./users";
     char filepath[256];
 
     snprintf(filepath, sizeof(filepath), "%s/%s", directory, nickname);
@@ -217,7 +217,7 @@ void game(int connfd, int multicastfd) {
     nickname[MAX_NICKNAME_LENGTH - 1] = '\0';
     syslog(LOG_INFO,"Player '%s' has logged in\n", nickname);
 
-    const char *directory = "/home/koan/myHome/Programming/VSCode/Projects/Programowanie_sieciowe_projekt/server/users";
+    const char *directory = "./users";
     const char *filename = (char*)user_message.value;
     char filepath[256];
 
