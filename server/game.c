@@ -194,7 +194,7 @@ void play_game(int sockfd, int multicastfd, char* nickname) {
 
     }
     // Stop measuring time
-    fprintf(file, "%s failure\n", word, mtime);
+    fprintf(file, "%s failure\n", word);
     free(underscore_word);
     free(word);
     fclose(file);
