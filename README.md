@@ -34,17 +34,22 @@ This project is a TCP-based Hangman game written in C, utilizing TLV (Type-Lengt
 
 2. Compile the server and client:
     ```sh
+    cd server
+    make
+    cd ../client
     make
     ```
 
 ## Usage
 1. Start the server:
     ```sh
+    cd server
     ./server
     ```
 
 2. Start the client:
     ```sh
+    cd client
     ./client
     ```
 
